@@ -1,0 +1,235 @@
+/* Estilos para todas as páginas (index.html, sobre.html, contato.html, galeria.html) */ 
+
+body { 
+
+    font-family: Arial, sans-serif; 
+  
+    margin: 0; 
+  
+    padding: 0; 
+  
+    background-color: #f4f4f4; 
+  
+    color: #333; 
+  
+  } 
+  
+  header { 
+  
+    background-color: #333; 
+  
+    color: white; 
+  
+    padding: 1rem; 
+  
+    text-align: center; 
+  
+  } 
+  
+  nav ul { 
+  
+    list-style-type: none; /* Remove marcadores da lista */ 
+  
+    padding: 0; 
+  
+  } 
+  
+  nav li { 
+  
+    display: inline; /* Exibe os itens da lista em linha */ 
+  
+    margin: 0 15px; 
+  
+  } 
+  
+  nav a { 
+  
+    color: white; /* Cor do texto dos links */ 
+  
+    text-decoration: none; /* Remove sublinhado dos links */ 
+  
+  } 
+  
+  #banner { 
+  
+    background-image: url("banner.jpg"); /* Imagem de fundo */ 
+  
+    background-size: cover; 
+  
+    color: rgb(24, 22, 22); 
+  
+    text-align: center; 
+  
+    padding: 5rem 0; /* Adiciona padding superior e inferior */ 
+  
+  } 
+  
+  #destaques { 
+  
+    padding: 20px; 
+  
+  } 
+  
+  .produtos { 
+  
+    display: flex; 
+  
+    justify-content: space-around; 
+  
+    flex-wrap: wrap; 
+  
+  } 
+  
+  .produto { 
+  
+    width: 250px; 
+  
+    border: 1px solid #ddd; 
+  
+    padding: 20px; 
+  
+    margin-bottom: 20px; 
+  
+    text-align: center; 
+  
+    background-color: white; 
+  
+  } 
+  
+  .produto img { 
+  
+    max-width: 100%; 
+  
+    height: auto; 
+  
+    margin-bottom: 10px; 
+  
+  } 
+  
+  footer { 
+  
+    background-color: #333; 
+  
+    width: 100%; 
+  
+    color: white; 
+  
+    text-align: center; 
+  
+    padding: 1rem; 
+  
+    position: fixed; 
+  
+    bottom: 0; 
+  
+  } 
+  
+  #sobre, 
+  
+  #contato, 
+  
+  #galeria { 
+  
+    /* Estilos para as seções Sobre, Contato e Galeria */ 
+  
+    padding: 20px; 
+  
+    background-color: white; 
+  
+    margin: 20px auto; /* Centraliza horizontalmente com margens automáticas */ 
+  
+    max-width: 800px; /* Limita a largura máxima do conteúdo */ 
+  
+  } 
+  
+  /* Estilos para o formulário de contato (contato.html) */ 
+  
+  form label, 
+  
+  form input, 
+  
+  form textarea { 
+  
+    display: block; /* Exibe os elementos do formulário em blocos separados */ 
+  
+    width: 100%; 
+  
+    margin-bottom: 10px; 
+  
+  } 
+  
+  form input[type="text"], 
+  
+  form input[type="email"], 
+  
+  form textarea { 
+  
+    padding: 8px; 
+  
+    border: 1px solid #ccc; 
+  
+  } 
+  
+  form input[type="submit"] { 
+  
+    background-color: #4caf50; 
+  
+    color: white; 
+  
+    padding: 10px 20px; 
+  
+    border: none; 
+  
+    cursor: pointer; 
+  
+  } 
+  
+  .card { 
+  
+    width: 250px; /* Largura do card */ 
+  
+    border: 1px solid #ccc; /* Borda do card */ 
+  
+    padding: 20px; /* Espaçamento interno do card */ 
+  
+    margin-bottom: 20px; /* Margem inferior para separar os cards */ 
+  
+    text-align: center; /* Centraliza o texto */ 
+  
+  } 
+  
+  .card img { 
+  
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card */ 
+  
+    height: 150px; /* Mantém a proporção da imagem */ 
+  
+    margin-bottom: 10px; /* Espaço entre a imagem e o título */ 
+  
+  } 
+  
+  .card h3 { 
+  
+    margin-bottom: 5px; /* Espaço entre o título e a descrição */ 
+  
+  } 
+  
+  .card p { 
+  
+    margin-bottom: 10px; /* Espaço entre a descrição e o preço */ 
+  
+  } 
+  
+  .card button { 
+  
+    background-color: #4caf50; /* Cor de fundo do botão */ 
+  
+    color: white; /* Cor do texto do botão */ 
+  
+    padding: 10px 20px; /* Espaçamento interno do botão */ 
+  
+    border: none; /* Remove a borda do botão */ 
+  
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */ 
+  
+  } 
