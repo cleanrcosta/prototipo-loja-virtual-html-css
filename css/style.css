@@ -1,263 +1,174 @@
-/* Estilos para todas as páginas (index.html, sobre.html, contato.html, galeria.html) */ 
+/* Estilos para todas as páginas (index.html, sobre.html, contato.html, galeria.html) */
 
-body { 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
-    font-family: Arial, sans-serif; 
-  
-    margin: 0; 
-  
-    padding: 0; 
-  
-    background-color: #619795; 
-  
-    color: #333; 
-  
-  } 
-  
-  header { 
-  
-    background-color: hsl(256, 35%, 53%); 
-  
-    color: hwb(270 78% 18%); 
-  
-    padding: 1rem; 
-  
-    text-align: center; 
-  
-  } 
-  
-  nav ul { 
-  
-    list-style-type: none; /* Remove marcadores da lista */ 
-  
-    padding: 0; 
-  
-  } 
-  
-  nav li { 
-  
-    display: inline; /* Exibe os itens da lista em linha */ 
-  
-    margin: 0 15px; 
-  
-  } 
-  
-  nav a { 
-  
-    color: white; /* Cor do texto dos links */ 
-    text-decoration: none; /* Remove sublinhado dos links */ 
-    display: inline-block; /* Permite aplicar transformações */
-    transition: transform 0.3s ease; /* Adiciona transição suave */
-  
-  } 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #619795;
+    color: #333;
+}
 
-  nav ul li a:hover{
+main {
+    flex: 1;
+}
+
+header {
+    background-color: hsl(256, 35%, 53%);
+    color: hwb(270 78% 18%);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
     text-decoration: underline;
-    transform: scale(1.2); /* Amplia o texto em 20% */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-  }
-  
-  #banner { 
-    width: 100%; /* Largura da div */
-    height: 600px; /* Altura da div */
-    background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)   ;
-  
-    background-size: cover; 
-    font-family:  Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(24, 22, 22); 
-  
-    text-align: center; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra escura */
-    color: white; /* Garante contraste adicional */
-  
-    padding: 5rem 0; /* Adiciona padding superior e inferior */ 
-  
-  } 
-
-  
-  
-  #destaques { 
-  
-    padding: 20px; 
-  
-  } 
-  
-  .produtos { 
-  
-    display: flex; 
-  
-    justify-content: space-around; 
-  
-    flex-wrap: wrap; 
-  
-  } 
-  
-  .produto { 
-  
-    width: 250px; 
-  
-    border: 1px solid #ddd; 
-  
-    padding: 20px; 
-  
-    margin-bottom: 20px; 
-  
-    text-align: center; 
-  
-    background-color: white; 
-  
-  } 
-  
-  .produto img { 
-  
-    max-width: 100%; 
-  
-    height: auto; 
-  
-    margin-bottom: 10px; 
-  
-  } 
-  
-  footer { 
-  
-    background-color: hsl(256, 35%, 53%); 
-      
-    width: 100%; 
-  
-    color: white; 
-  
-    text-align: center; 
-  
-    padding: 1rem; 
-  
-    
-  
-    bottom: 0; 
-  
-  } 
-  
-  #sobre, 
-  
-  #contato, 
-  
-  #galeria { 
-  
-    /* Estilos para as seções Sobre, Contato e Galeria */ 
-  
-    padding: 20px; 
-  
-    background-color: white; 
-  
-    margin: 20px auto; /* Centraliza horizontalmente com margens automáticas */ 
-  
-    max-width: 800px; /* Limita a largura máxima do conteúdo */ 
-  
-  } 
-  
-  /* Estilos para o formulário de contato (contato.html) */ 
-  
-  form label, 
-  
-  form input, 
-  
-  form textarea { 
-  
-    display: block; /* Exibe os elementos do formulário em blocos separados */ 
-  
-    width: 100%; 
-  
-    margin-bottom: 10px; 
-  
-  } 
-  
-  form input[type="text"], 
-  
-  form input[type="email"], 
-  
-  form textarea { 
-  
-    padding: 8px; 
-  
-    border: 1px solid #ccc; 
-  
-  } 
-  
-  form input[type="submit"] { 
-    background-color: hsl(256, 35%, 53%); 
-    color: white; 
-    padding: 15px 20px; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 18px; 
-    width: 200px; /* Você pode ajustar a largura conforme necessário */
-    height: 50px; 
-    border-radius: 5px; 
-    transition: transform 0.3s ease; 
-    margin: 0 auto; /* Centraliza o botão horizontalmente */
-    display: block; /* Faz com que o botão seja tratado como um bloco */
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
-form input[type="submit"]:hover {  
-    transform: scale(1.2); 
+#banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(24, 22, 22);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5rem 0;
 }
 
-    form input[type="submit"]:hover {  
-    transform: scale(1.2); /* Amplia o texto em 20% */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-  
-  } 
-  
-  .card { 
-  
-    width: 250px; /* Largura do card */ 
-  
-    border: 1px solid #ccc; /* Borda do card */ 
-  
-    padding: 20px; /* Espaçamento interno do card */ 
-  
-    margin-bottom: 20px; /* Margem inferior para separar os cards */ 
-  
-    text-align: center; /* Centraliza o texto */ 
-  
-  } 
-  
-  .card img { 
-  
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card */ 
-  
-    height: 150px; /* Mantém a proporção da imagem */ 
-  
-    margin-bottom: 10px; /* Espaço entre a imagem e o título */ 
-  
-  } 
-  
-  .card h3 { 
-  
-    margin-bottom: 5px; /* Espaço entre o título e a descrição */ 
-  
-  } 
-  
-  .card p { 
-  
-    margin-bottom: 10px; /* Espaço entre a descrição e o preço */ 
-  
-  } 
-  
-  .card button { 
-  
-    background-color: hsl(256, 35%, 53%);  /* Cor de fundo do botão */ 
-  
-    color: white; /* Cor do texto do botão */ 
-  
-    padding: 10px 20px; /* Espaçamento interno do botão */ 
-  
-    border: none; /* Remove a borda do botão */ 
-  
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */ 
-  
-  } 
-  .card button:hover{
-   
-    transform: scale(1.2); /* Amplia o texto em 20% */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-  }
+#destaques {
+    padding: 20px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: hsl(256, 35%, 53%);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+#sobre,
+#contato,
+#galeria {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: hsl(256, 35%, 53%);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+form input[type="submit"]:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: hsl(256, 35%, 53%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
