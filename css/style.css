@@ -8,7 +8,7 @@ body {
   
     padding: 0; 
   
-    background-color: #f4f4f4; 
+    background-color: #619795; 
   
     color: #333; 
   
@@ -16,9 +16,9 @@ body {
   
   header { 
   
-    background-color: #333; 
+    background-color: hsl(256, 35%, 53%); 
   
-    color: white; 
+    color: hwb(270 78% 18%); 
   
     padding: 1rem; 
   
@@ -45,24 +45,36 @@ body {
   nav a { 
   
     color: white; /* Cor do texto dos links */ 
-  
     text-decoration: none; /* Remove sublinhado dos links */ 
+    display: inline-block; /* Permite aplicar transformações */
+    transition: transform 0.3s ease; /* Adiciona transição suave */
   
   } 
+
+  nav ul li a:hover{
+    text-decoration: underline;
+    transform: scale(1.2); /* Amplia o texto em 20% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  }
   
   #banner { 
-  
-    background-image: url("banner.jpg"); /* Imagem de fundo */ 
+    width: 100%; /* Largura da div */
+    height: 600px; /* Altura da div */
+    background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)   ;
   
     background-size: cover; 
-  
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(24, 22, 22); 
   
     text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra escura */
+    color: white; /* Garante contraste adicional */
   
     padding: 5rem 0; /* Adiciona padding superior e inferior */ 
   
   } 
+
+  
   
   #destaques { 
   
@@ -108,8 +120,8 @@ body {
   
   footer { 
   
-    background-color: #333; 
-  
+    background-color: hsl(256, 35%, 53%); 
+      
     width: 100%; 
   
     color: white; 
@@ -118,7 +130,7 @@ body {
   
     padding: 1rem; 
   
-    position: fixed; 
+    
   
     bottom: 0; 
   
@@ -171,16 +183,27 @@ body {
   } 
   
   form input[type="submit"] { 
-  
-    background-color: #4caf50; 
-  
+    background-color: hsl(256, 35%, 53%); 
     color: white; 
-  
-    padding: 10px 20px; 
-  
+    padding: 15px 20px; 
     border: none; 
-  
     cursor: pointer; 
+    font-size: 18px; 
+    width: 200px; /* Você pode ajustar a largura conforme necessário */
+    height: 50px; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease; 
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Faz com que o botão seja tratado como um bloco */
+}
+
+form input[type="submit"]:hover {  
+    transform: scale(1.2); 
+}
+
+    form input[type="submit"]:hover {  
+    transform: scale(1.2); /* Amplia o texto em 20% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
   
   } 
   
@@ -222,7 +245,7 @@ body {
   
   .card button { 
   
-    background-color: #4caf50; /* Cor de fundo do botão */ 
+    background-color: hsl(256, 35%, 53%);  /* Cor de fundo do botão */ 
   
     color: white; /* Cor do texto do botão */ 
   
@@ -233,3 +256,8 @@ body {
     cursor: pointer; /* Muda o cursor para indicar que é clicável */ 
   
   } 
+  .card button:hover{
+   
+    transform: scale(1.2); /* Amplia o texto em 20% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  }
