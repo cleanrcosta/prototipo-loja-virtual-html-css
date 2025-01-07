@@ -68,6 +68,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+   
+
 }
 
 .produto {
@@ -77,6 +79,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: center;
     background-color: white;
+    border-radius: 10px;
 }
 
 .produto img {
@@ -172,3 +175,69 @@ form input[type="submit"]:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px) { 
+
+    header { 
+
+      background-color: burlywood; 
+
+      color: rgb(23, 23, 24); 
+
+    } 
+
+    #menu ul { 
+
+      flex-direction: column; /* Menu vertical em telas menores */ 
+
+      align-items: center; 
+
+    } 
+
+     #menu li { 
+
+      display: block; /* Exibe os itens em bloco (um abaixo do outro) em telas menores */ 
+
+      margin: 10px 0; /* Margem vertical nos itens do menu */ 
+
+      width: 100%; /* Largura total para os itens do menu em telas menores */ 
+
+      text-align: center; /* Centraliza o texto dos itens do menu em telas menores */ 
+
+    } 
+
+  } 
+
+   /* Media Queries para Responsividade */ 
+
+  @media (max-width: 768px) { 
+
+    header h1 { 
+
+      font-size: 1.8rem; /* Diminui o tamanho da fonte em telas menores */ 
+
+      text-align: center; /* Centraliza o texto em telas menores */ 
+
+    } 
+
+  } 
+
+   .produto { 
+
+    width: 90%; /* Largura dos produtos em telas menores */ 
+
+    max-width: 300px; /* Largura máxima dos produtos */ 
+
+  } 
+
+   body { 
+
+    background-color: #f0f0f0; /* Cor de fundo diferente em telas menores */ 
+
+  } 
+
+   h2 { 
+
+    font-size: 1.2rem; /* Tamanho de fonte menor para títulos em telas menores */ 
+
+  } 
