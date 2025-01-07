@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #619795;
+    background-color: #f0f0f0;
     color: #333;
 }
 
@@ -68,7 +68,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-   
+    border-radius: 50px;
 
 }
 
@@ -78,14 +78,15 @@ nav ul li a:hover {
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-    background-color: white;
-    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+     
 }
 
 .produto img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    
 }
 
 footer {
@@ -147,6 +148,7 @@ form input[type="submit"]:hover {
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 15px;
 }
 
 .card img {
@@ -169,6 +171,7 @@ form input[type="submit"]:hover {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 50px;
 }
 
 .card button:hover {
@@ -220,24 +223,23 @@ form input[type="submit"]:hover {
 
     } 
 
-  } 
-
-   .produto { 
-
-    width: 90%; /* Largura dos produtos em telas menores */ 
-
-    max-width: 300px; /* Largura máxima dos produtos */ 
-
-  } 
-
-   body { 
-
-    background-color: #f0f0f0; /* Cor de fundo diferente em telas menores */ 
-
-  } 
-
-   h2 { 
-
-    font-size: 1.2rem; /* Tamanho de fonte menor para títulos em telas menores */ 
-
+    .produto { 
+  
+     width: 90%; /* Largura dos produtos em telas menores */ 
+  
+     max-width: 300px; /* Largura máxima dos produtos */ 
+  
+   } 
+  
+    body { 
+  
+     background-color: #f0f0f0; /* Cor de fundo diferente em telas menores */ 
+  
+   } 
+  
+    h2 { 
+  
+     font-size: 1.2rem; /* Tamanho de fonte menor para títulos em telas menores */ 
+  
+   } 
   } 
